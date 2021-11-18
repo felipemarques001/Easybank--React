@@ -1,0 +1,88 @@
+
+.container{
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+}
+#textAbout{
+    width: 50%;
+    margin-left: 10%;
+    color: #1c1c1c;
+}
+#textAbout h1{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+#textAbout p {
+    font-size: 1.1em;
+    opacity: 0.6;
+}
+
+#cards{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 50px;
+    width: 100%;
+}
+.card{
+    width: 20%;
+    color: #1c1c1c;
+    padding: 0px 5px;
+}
+.card h4{
+    font-size: 1.5em;
+    padding: 15px 0px;
+    opacity: 0.8;
+}
+.card p{
+    font-size: 1.1em;
+    opacity: 0.6;
+}
+
+
+
+@media(max-width: 768px){
+    .container{
+        background-color: whitesmoke;
+        padding-bottom: 50px;
+        padding-top: 100px;
+    }
+    #textAbout{
+        width: 50%;
+        margin-left: 25%;
+        color: #1c1c1c;
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 501px){
+    #textAbout{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #cards{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .card{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
+@media(max-width: 350px){
+    #textAbout h1{
+        font-size: 2em;
+    }
+    #textAbout p {
+        font-size: 1em;
+    }
+    .card p{
+        font-size: 1em;
+    }
+}
